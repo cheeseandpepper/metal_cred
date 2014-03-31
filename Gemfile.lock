@@ -70,7 +70,6 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.1.1)
-    rmagick (2.13.2)
     shotgun (0.9)
       rack (>= 1.0)
     simple_oauth (0.2.0)
@@ -123,7 +122,6 @@ DEPENDENCIES
   pry
   rack
   rake
-  rmagick
   shotgun
   sinatra
   sinatra-contrib

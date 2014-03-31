@@ -11,7 +11,6 @@ gem 'shotgun'
 gem 'carrierwave'
 gem 'rack'
 gem 'sinatra-thumbnails', :require => "sinatra/thumbnails"
-gem 'rmagick'
 gem 'thumbnail'
 gem 'pony'
 gem 'geocoder'
