@@ -1,0 +1,25 @@
+<%= erb :head %>
+<div class="index_container">
+
+  <%= erb :upload %>
+
+  
+ <!--  <div class="chart"><%= pie_chart({"Weenie" => @all_users.count, "Basketball" => 5,}, :library => {:backgroundColor => "transparent"}) %></div>
+ -->
+  <div class="iframe_container">
+    <div id="map-canvas">
+    </div>
+    <p>See the metal strength around the globe.</p>
+    <p><span class="cred"><%= @all_users.size %></span> metal heads have thrown the horns!</p>
+    
+  </div>
+</div>
+<!-- <div id="twitter">
+  <a class="twitter-timeline" href="https://twitter.com/metalcred" data-widget-id="446393146423787520">Tweets by @metalcred</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div> -->
+<br>
+
+  
+
+<%= erb :foot %>

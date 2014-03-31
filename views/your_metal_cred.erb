@@ -1,0 +1,25 @@
+<%= erb :head %>
+
+<div class="main_container">
+  <div class="form_container">
+    <div class="inner_form">
+      <table>
+        <p>Your Metal Cred Is <span class="cred"><%= @user_lib_info.user_metal_cred %></span><br><img src="/site_img/<%= @user_lib_info.user_cred_pic %>" /></p>
+        <p>Your Metal Percent Is <span class="cred"><%= (@user_lib_info.metal_percent*100).round(2) %>%</span>.</p>
+        <p>You have <span class="cred"><%= @user_lib_info.total_songs %></span> songs.</p>
+        <p>You have <span class="cred"><%= @user_lib_info.total_artists %></span> artists.</p>
+        <p>You have <span class="cred"><%= @user_lib_info.total_metal_songs %></span> heavy songs.</p>
+        <p>Your favorite genre is <span class="cred"><%= @user_lib_info.your_favorite_genre %></span>.</p>
+        <p>Your average song length is <span class="cred"><%= @user_lib_info.avg_song_length %></span>.</p>
+      </table>
+    </div>
+  </div>
+  <div class="iframe_container">
+      <p>Here, have some METAL!</p>
+      <iframe width="480" height="360" src="//www.youtube.com/embed?listType=playlist&list=<%= @playlists.sample %>&autoplay=1&index=<%= @rand %>" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+<%= erb :foot %>

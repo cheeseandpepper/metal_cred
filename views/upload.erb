@@ -1,0 +1,63 @@
+
+<form class="form_container" action="/success" method="POST" enctype="multipart/form-data">
+
+  <div class="inner_form">
+
+
+    <table>
+      <tr>
+        <td>
+          <label for="file">Select iTunes Library</label>
+        </td>
+
+
+
+
+
+
+
+
+
+        <td>
+          <div class="fileUpload btn btn-primary">
+            <span id="uploadtext">Upload</span>
+            <input class="upload" type="file" name="library[upload_file]" id="file" required>
+          </div>
+        </td>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <td>
+          <input class="fileUpload btn btn-primary"type="submit" value="Submit">
+        </td>
+        <br><br>
+        <tr>
+          <td>
+            <p id="helpbox" onclick="myalert();">I don't understand, show me!</p>
+          </td>
+          </table>
+          </form>
+    
+          <br>
+          <table id="instructions">
+          <tr><td>How it works:</td></tr><br>
+          <tr><td>Select your iTunes library xml file.</td></tr><br>
+          <tr><td>Upload to the all-knowing metal master.</td></tr><br>
+          <tr><td>Get your metal cred!</td></tr>
+        </table>
+        
+      </div>
+    
+
+
+
+
+    <script type=”text/javascript”>
+    $(“#file-upload-button”).change(function () {
+      var fileName = $(this).val().replace(‘C:\fakepath\’, ”);
+      $(“#file-upload-filename”).html(fileName);
+    });
+    </script>
+
+    <script>
+    var myalert= function(){alertify.alert("<img src='site_img/showme.png'</a>");}
+    </script>
+
